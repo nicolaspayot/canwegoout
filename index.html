@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Can we go out?</title>
+  <style>
+    :root {
+      font-size: 62.5%;
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    html {
+      font-size: 1.6rem;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    }
+
+    body,
+    h1,
+    h2 {
+      margin: 0;
+    }
+
+    body {
+      scroll-behavior: smooth;
+      text-rendering: optimizeSpeed;
+      background-color: #ff396c;
+      color: #fff;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .container > h2 > a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    @media only screen and (min-width : 320px) {
+      .container > h1 {
+        font-size: 20rem;
+      }
+      .container > h2 {
+        font-size: 3rem;
+      }
+    }
+
+    @media only screen and (min-width : 768px) {
+      .container > h1 {
+        font-size: 40rem;
+      }
+      .container > h2 {
+        font-size: 4rem;
+      }
+    }
+
+    @media only screen and (min-width: 1200px) {
+      .container > h1 {
+        font-size: 55rem;
+      }
+      .container > h2 {
+        font-size: 5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>NO</h1>
+    <h2>
+      <a href="https://twitter.com/search?q=%23stayhome" target="_blank" rel="noopener noreferrer">
+        #stayhome
+      </a>
+    </h2>
+  </div>
+</body>
+</html>
