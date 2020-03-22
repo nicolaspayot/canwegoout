@@ -42,41 +42,65 @@
       display: flex;
       flex-direction: column;
       height: 100vh;
-      justify-content: center;
-      align-items: center;
       width: 100%;
       margin-left: auto;
       margin-right: auto;
     }
 
-    .container > h2 > a {
+    .main,
+    .footer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .main {
+      height: 80%;
+      width: 100%;
+    }
+
+    .footer {
+      justify-content: flex-end;
+      height: 20%;
+      width: 100%;
+      font-size: 1.5rem;
+      padding-bottom: 5rem;
+    }
+
+    .hashtag > a,
+    .copyright > a {
       color: #fff;
       text-decoration: none;
     }
 
+    .copyright > a:hover {
+      text-decoration: underline;
+    }
+
     @media only screen and (min-width : 320px) {
-      .container > h1 {
+      .main > h1 {
         font-size: 20rem;
       }
-      .container > h2 {
+      .hashtag {
         font-size: 3rem;
       }
     }
 
     @media only screen and (min-width : 768px) {
-      .container > h1 {
+      .main > h1 {
         font-size: 40rem;
       }
-      .container > h2 {
+      .hashtag {
         font-size: 4rem;
       }
     }
 
     @media only screen and (min-width: 1200px) {
-      .container > h1 {
+      .main > h1 {
         font-size: 55rem;
       }
-      .container > h2 {
+      .hashtag {
         font-size: 5rem;
       }
     }
@@ -84,12 +108,17 @@
 </head>
 <body>
   <div class="container">
-    <h1>NO</h1>
-    <h2>
-      <a href="https://twitter.com/search?q=%23stayhome" target="_blank" rel="noopener noreferrer">
-        #stayhome
-      </a>
-    </h2>
+    <div class="main">
+      <h1>NO</h1>
+      <h2 class="hashtag">
+        <a href="https://twitter.com/search?q=%23stayhome" target="_blank" rel="noopener noreferrer">
+          #stayhome
+        </a>
+      </h2>
+    </div>
+    <footer class="footer">
+      <div class="copyright">© 2020 <a href="https://nicolaspayot.com" target="_blank" rel="noopener noreferrer">Nicolas Payot</a></div>
+    </footer>
   </div>
 </body>
 </html>
