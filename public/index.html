@@ -75,6 +75,15 @@
       padding-bottom: 5rem;
     }
 
+    .hashtag {
+      display: flex;
+      align-items: center;
+    }
+
+    .twitter-share-button {
+      margin-left: 2rem;
+    }
+
     .hashtag > a,
     .copyright > a {
       color: #fff;
@@ -94,12 +103,34 @@
       }
     }
 
+    @media only screen and (min-width : 320px) and (orientation: landscape) {
+      .main > h1 {
+        font-size: 20rem;
+      }
+      .hashtag {
+        font-size: 3rem;
+      }
+      .footer {
+        padding-bottom: 2rem;
+      }
+    }
+
     @media only screen and (min-width : 768px) {
       .main > h1 {
         font-size: 40rem;
       }
       .hashtag {
         font-size: 4rem;
+      }
+    }
+
+    @media only screen and (min-width : 768px) and (orientation: landscape) {
+      .main > h1 {
+        font-size: 28rem;
+      }
+      .hashtag {
+        font-size: 3rem;
+        margin-top: -3rem;
       }
     }
 
@@ -121,11 +152,22 @@
         <a href="https://twitter.com/search?q=%23stayhome" target="_blank" rel="noopener noreferrer">
           #stayhome
         </a>
+        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw"
+          class="twitter-share-button"
+          data-size="large"
+          data-text="In case you&#39;re still wondering, help spread the word and save lives!"
+          data-url="https://canwegoout.com"
+          data-via="npayot"
+          data-hashtags="stayhome"
+          data-show-count="false">
+          Tweet
+        </a>
       </h2>
     </div>
     <footer class="footer">
       <div class="copyright">© 2020 <a href="https://nicolaspayot.com" target="_blank" rel="noopener noreferrer">Nicolas Payot</a></div>
     </footer>
   </div>
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </body>
 </html>
